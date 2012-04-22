@@ -9,5 +9,3 @@ supports          "ubuntu"
 %w( apt build-essential ).each do |d|
   depends d
 end
-
-recipe            "ruby-1.9.2", "Installs Ruby 1.9.2 from source."

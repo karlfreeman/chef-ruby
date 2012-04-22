@@ -29,7 +29,7 @@ end
   end
 end
 
-%w( ohai chef bundler ).each do |g|
+%w( bundler ).each do |g|
   gem_package g do
     action :install
     gem_binary('/usr/local/bin/gem')

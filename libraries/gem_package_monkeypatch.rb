@@ -4,6 +4,7 @@ def patch_gem_package
       super
       @resource_name = :gem_package
       self.gem_binary('/usr/local/bin/gem')
+      @provider = Chef::Provider::Package::Rubygems
     end
   end
 end
