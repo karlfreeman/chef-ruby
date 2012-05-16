@@ -1,7 +1,6 @@
-# chef-ruby1.9
+# chef-ruby
 
 Installs Ruby 1.9.x from source.
-
 
 ## Acknowledgements
 
@@ -18,11 +17,6 @@ RVM in conjunction with Chef is shit.
 
 * `ruby/version`: string containing the ruby version you want to install.
   Default: "1.9.2-p180"
-
-
-## Recipes
-
-* `ruby1.9`: installs Ruby from source.
 
 
 ## Legal
