@@ -28,18 +28,3 @@ end
     not_if ruby_installed_check
   end
 end
-
-gem_package "ohai" do
-  action :install
-  gem_binary('/usr/local/bin/gem')
-end
-
-gem_package "chef" do
-  action :install
-  gem_binary('/usr/local/bin/gem')
-end
-
-gem_package "bundler" do
-  action :install
-  gem_binary('/usr/local/bin/gem')
-end
