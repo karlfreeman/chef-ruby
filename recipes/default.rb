@@ -29,9 +29,20 @@ end
   end
 end
 
-%w( bundler ).each do |g|
-  gem_package g do
-    action :install
-    gem_binary('/usr/local/bin/gem')
-  end
+gem_package "ohai" do
+  user "root"
+  action :install
+  gem_binary('/usr/local/bin/gem')
+end
+
+gem_package "chef" do
+  user "root"
+  action :install
+  gem_binary('/usr/local/bin/gem')
+end
+
+gem_package "bundler" do
+  user "root"
+  action :install
+  gem_binary('/usr/local/bin/gem')
 end
